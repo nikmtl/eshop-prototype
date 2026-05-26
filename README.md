@@ -75,3 +75,15 @@ The app will be available at [http://localhost:5173](http://localhost:5173).
 | `pnpm preview` | Preview production build locally |
 | `pnpm check` | Run Svelte type checking |
 | `pnpm format` | Format code with Prettier |
+
+## Technical Documentation
+Detailed technical documentation is available in the `docs` folder, covering architecture, database design, routes, state management, features, and deployment instructions.
+
+| File | Description |
+|------|-------------|
+| [architecture.md](./docs/architecture.md) | Tech stack, project structure, configuration |
+| [database.md](./docs/database.md) | PostgreSQL schema, tables, indexes, seed data |
+| [routes.md](./docs/routes.md) | SvelteKit route structure and page responsibilities |
+| [state-management.md](./docs/state-management.md) | Svelte stores (cart, demo tour, return flow) |
+| [features.md](./docs/features.md) | Feature descriptions and data flows |
+| [deployment.md](./docs/deployment.md) | Build process, Docker, environment variables |
