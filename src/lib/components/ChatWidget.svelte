@@ -233,7 +233,7 @@
 						if (e.key === 'Enter') send();
 					}}
 					placeholder="Type a message…"
-					class="flex-1 bg-transparent text-sm outline-none placeholder:text-gray-400"
+					class="flex-1 bg-transparent text-sm outline-none placeholder:text-gray-400 border-none ring-0 focus:outline-none focus:ring-0[&::-webkit-search-cancel-button]:hidden"
 				/>
 				<button
 					onclick={() => send()}
