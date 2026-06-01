@@ -35,13 +35,13 @@
 	<!-- ── LANDING MODE ─────────────────────────────────────────────────────── -->
 
 	<!-- Hero -->
-	<section class="relative grid min-h-[85vh] grid-cols-1 overflow-hidden lg:grid-cols-2">
+	<section class="relative grid grid-cols-1 overflow-hidden lg:min-h-[85vh] lg:grid-cols-2">
 		<!-- Text side -->
-		<div class="flex flex-col justify-center px-8 py-20 lg:px-16 xl:px-24">
+		<div class="flex flex-col justify-center px-6 py-10 sm:py-14 lg:px-16 lg:py-20 xl:px-24">
 			<p class="text-[11px] font-semibold uppercase tracking-[0.25em] text-gray-400">
 				New Drop — SS26
 			</p>
-			<h1 class="mt-4 text-5xl font-light leading-tight tracking-tight text-gray-900 lg:text-6xl">
+			<h1 class="mt-4 text-4xl font-light leading-tight tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
 				Built to<br /><em class="not-italic font-semibold">last.</em>
 			</h1>
 			<p class="mt-5 max-w-xs text-base leading-relaxed text-gray-500">
@@ -61,7 +61,7 @@
 		</div>
 
 		<!-- Image side -->
-		<div class="relative order-first h-72 lg:order-last lg:h-auto">
+		<div class="relative order-first h-56 sm:h-72 lg:order-last lg:h-auto">
 			<img
 				src="https://straight-outta-cotton.com/cdn/shop/files/oversize-hoodie-black-straight-outta-cotton-1378031.jpg"
 				alt="Oversize Hoodie – Black"
@@ -97,7 +97,7 @@
 			<p class="mt-1 text-sm text-gray-500">Our highest-rated pieces this season</p>
 		</div>
 
-		<div class="grid grid-cols-2 gap-x-5 gap-y-10 lg:grid-cols-4">
+		<div class="grid grid-cols-2 gap-x-3 gap-y-8 sm:gap-x-5 sm:gap-y-10 lg:grid-cols-4">
 			{#each data.featured as product}
 				<a href="/products/{product.id}" class="group">
 					<div class="aspect-3/4 overflow-hidden rounded-xl bg-gray-50">
@@ -223,7 +223,7 @@
 		{#if data.products.length === 0}
 			<p class="text-gray-400">No products in this category yet.</p>
 		{:else}
-			<div class="grid grid-cols-2 gap-x-5 gap-y-10 sm:grid-cols-3 lg:grid-cols-4">
+			<div class="grid grid-cols-2 gap-x-3 gap-y-8 sm:gap-x-5 sm:gap-y-10 sm:grid-cols-3 lg:grid-cols-4">
 				{#each data.products as product}
 					<a href="/products/{product.id}" class="group">
 						<div class="aspect-3/4 overflow-hidden rounded-xl bg-gray-50">

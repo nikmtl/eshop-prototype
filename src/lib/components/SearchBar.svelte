@@ -70,7 +70,7 @@
 			onblur={() => setTimeout(() => { open = false; }, 160)}
 			placeholder="Search products…"
 			autocomplete="off"
-			class="flex-1 bg-transparent text-sm border-none outline-none ring-0 focus:outline-none focus:ring-0 placeholder:text-gray-400 [&::-webkit-search-cancel-button]:hidden"
+			class="min-w-0 flex-1 bg-transparent text-sm border-none outline-none ring-0 focus:outline-none focus:ring-0 placeholder:text-gray-400 [&::-webkit-search-cancel-button]:hidden"
 		/>
 		{#if loading}
 			<div class="h-3.5 w-3.5 shrink-0 animate-spin rounded-full"></div>

@@ -24,7 +24,7 @@
 
 	<div
 		transition:fly={{ x: 384, duration: 300, opacity: 1 }}
-		class="fixed inset-y-0 right-0 z-[60] flex w-full max-w-sm flex-col bg-white shadow-2xl"
+		class="fixed inset-y-0 right-0 z-[60] flex w-full sm:max-w-sm flex-col bg-white shadow-2xl"
 		role="dialog"
 		aria-label="Shopping cart"
 		aria-modal="true"

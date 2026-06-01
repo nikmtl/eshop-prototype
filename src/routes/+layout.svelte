@@ -26,15 +26,15 @@
 	}
 </script>
 
-<div class="flex min-h-screen flex-col bg-white text-gray-900">
+<div class="flex min-h-screen flex-col bg-white text-gray-900 overflow-x-hidden">
 	<header class="sticky top-0 z-50 border-b border-gray-100 bg-white/95 backdrop-blur-sm print:hidden">
-		<div class="mx-auto max-w-6xl px-6">
+		<div class="mx-auto max-w-6xl px-4 sm:px-6">
 			<!-- Row 1: Logo · Search · Cart -->
-			<div class="flex items-center gap-4 py-4">
-				<a href="/" class="shrink-0 text-base font-semibold tracking-[0.2em] text-gray-900">
+			<div class="flex items-center gap-2 sm:gap-4 py-3.5 sm:py-4">
+				<a href="/" class="shrink-0 text-sm sm:text-base font-semibold tracking-[0.2em] text-gray-900">
 					FORM.
 				</a>
-				<div class="flex flex-1 justify-center px-2">
+				<div class="flex min-w-0 flex-1 justify-center px-1 sm:px-2">
 					<div class="w-full max-w-sm" data-demo="demo-search">
 						<SearchBar />
 					</div>
@@ -61,7 +61,7 @@
 			<!-- Row 2: Category nav — hidden on flow pages -->
 			{#if !$page.url.pathname.startsWith('/returns') && !$page.url.pathname.startsWith('/order') && $page.url.pathname !== '/checkout' && $page.url.pathname !== '/cart'}
 				<nav
-					class="flex items-center justify-center gap-1 overflow-x-auto border-t border-gray-100 py-2 [-ms-overflow-style:none] scrollbar-none [&::-webkit-scrollbar]:hidden"
+					class="flex items-center gap-1 overflow-x-auto border-t border-gray-100 py-2 [-ms-overflow-style:none] scrollbar-none [&::-webkit-scrollbar]:hidden"
 					aria-label="Product categories"
 					data-demo="demo-categories"
 				>
@@ -95,7 +95,7 @@
 	</main>
 
 	<footer class="mt-24 border-t border-gray-100 print:hidden">
-		<div class="mx-auto max-w-6xl px-6">
+		<div class="mx-auto max-w-6xl px-4 sm:px-6">
 			<!-- Main footer grid -->
 			<div class="grid grid-cols-2 gap-10 py-12 sm:grid-cols-4">
 				<!-- Brand -->
@@ -140,7 +140,7 @@
 			<!-- Payment methods + copyright -->
 			<div class="flex flex-col items-center gap-5 border-t border-gray-100 py-8 sm:flex-row sm:justify-between">
 				<!-- Accepted payments -->
-				<div class="flex items-center gap-2">
+				<div class="flex flex-wrap items-center gap-2">
 					<!-- Visa -->
 					<span class="flex h-7 items-center rounded border border-gray-200 bg-white px-2.5 font-serif text-xs font-bold italic text-blue-700 shadow-sm">
 						VISA
@@ -175,7 +175,7 @@
 				</div>
 
 				<!-- Copyright -->
-				<p class="text-xs text-gray-400">
+				<p class="text-xs text-gray-400 text-center sm:text-right wrap-break-word">
 					© 2026 FORM. · University prototype · Not a real shop ·
 					Images: <a href="https://straight-outta-cotton.com" target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-gray-600 transition-colors">straight-outta-cotton.com</a>
 				</p>
