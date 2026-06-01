@@ -16,7 +16,8 @@ This prototype simulates a realistic online fashion store to serve as a controll
 
 ## Local Installation
 
-For the first few months after submission, the prototype will be available for public use at [https://eshop-prototype.mtzel.com](https://eshop-prototype.mtzel.com). However, to ensure long-term availability and allow for modifications, you can also run the prototype locally by following these steps:
+> [!Note]
+> For the first few months after submission, the prototype will be available for public use at [https://eshop-prototype.mtzel.com](https://eshop-prototype.mtzel.com). However, to ensure long-term availability and allow for modifications, you can also run the prototype locally by following these steps:
 
 ### Prerequisites
 
@@ -34,7 +35,7 @@ pnpm install
 
 ### 2. Set up the database
 
-In your Supabase project, open the SQL editor and run the schema and seed files in order:
+In your Supabase project, open the SQL editor and copy the contents of the following files to run them in order:
 
 ```
 supabase/schema.sql   ← creates tables
